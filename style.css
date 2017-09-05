@@ -1,8 +1,37 @@
 #searchBar {
   margin: 15px 10px;
+  font-family: 'Indie Flower', cursive;
+}
+.button{
+  background-color: orange;
+  color: white;
 }
 
-.tableWrapper {
-  max-height: 500px;
+.table {
+  max-height: 600px;
   overflow: auto;
+  font-size: 110%;
+  font-family: 'Indie Flower', cursive;
+}
+
+.table tr:nth-child(even) {
+    background-color: #D4DFF9;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #FAD47A;
+}
+
+.jumbotron{
+  font-size: 140%;
+  font-weight: bold;
+  background-color: #D4DFF9;
+  color: orange;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 350%;
+  font-family: 'Indie Flower', cursive;
 }

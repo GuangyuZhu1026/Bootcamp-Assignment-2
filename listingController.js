@@ -12,8 +12,12 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     $scope.addListing = function() {
       $scope.listings.push({code: $scope.listings.newcode, name: $scope.listings.newname,
       coordinates: {latitude: $scope.listings.newlatitude, longitude: $scope.listings.newlongitude},
-      address: $scope.listings.newaddress
-    });
+      address: $scope.listings.newaddress });
+      $scope.listings.newcode = "";
+      $scope.listings.newname = "";
+      $scope.listings.newlatitude = "";
+      $scope.listings.newlongitude = "";
+      $scope.listings.newaddress = "";
     };
 
     $scope.deleteListing = function(index) {
